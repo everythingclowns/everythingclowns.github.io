@@ -8,6 +8,23 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+  
+  .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
 </style>
 </head>
 <body>
@@ -32,7 +49,21 @@ img {
     <a href="#" onclick="onClick();">The Outer Light</a>
     </div>
   <div id="imageDiv" style="display:none">
-    <img src="clown_400x400.jpg" alt="Smiley face" height="400" width="400">
+    <div class="row">
+  <div class="column">
+    <img src="/OL/1 - DcTuLYF.gif">
+    <img src="/OL/3 - w7aoSdh.gif">
+    <img src="/OL/5 - mE0nzO8.gif">
+    
+  </div>
+  <div class="column">
+    <img src="/OL/2 - E8i4puz.gif">
+    <img src="/OL/4 - 6HIZ2yP.gif">
+    <img src="/OL/6 - MKHS0xX.gif">
+    
+  </div>
+  
+</div>
   </div>
   
 </body>
