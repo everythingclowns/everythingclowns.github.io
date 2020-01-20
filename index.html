@@ -17,11 +17,23 @@ img {
   <script>
     function onClick()
     {
-      alert('test'); 
+      //alert('test');
+      //document.getElementById("myDIV").style.display = "none";
+      
+      var imageDiv = document.getElementById("imageDiv");
+      
+      if (imageDiv.style.display == "none")
+        imageDiv.style.display = "block";
+      else
+        imageDiv.style.display = "none";
     }
   </script>
   <div style="text-align:center">
     <a href="#" onclick="onClick();">The Outer Light</a>
     </div>
+  <div id="imageDiv" style="display:none">
+    <img src="clown_400x400.jpg" alt="Smiley face" height="400" width="400">
+  </div>
+  
 </body>
 </html>
